@@ -8,7 +8,7 @@ import { aboutContent } from '@/content/site'
 
 export function About() {
   return (
-    <Section id="about" className="bg-muted/30">
+    <Section id="about" className="bg-gradient-to-br from-blue-50 to-purple-50">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -17,7 +17,7 @@ export function About() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <Heading level={2} className="mb-6">
+          <Heading level={2} className="mb-6 gradient-text">
             {aboutContent.headline}
           </Heading>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
@@ -36,7 +36,7 @@ export function About() {
               className="text-center"
             >
               <div className="mb-6">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-primary text-primary-foreground rounded-full text-2xl font-bold mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 text-white rounded-full text-2xl font-bold mb-4 shadow-lg">
                   {step.step}
                 </div>
               </div>

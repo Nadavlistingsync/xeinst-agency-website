@@ -16,7 +16,7 @@ export function FAQ() {
   }
 
   return (
-    <Section id="faq">
+    <Section id="faq" className="bg-gradient-to-br from-purple-50 to-pink-50">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -25,7 +25,7 @@ export function FAQ() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <Heading level={2} className="mb-6">
+          <Heading level={2} className="mb-6 gradient-text">
             {faqContent.headline}
           </Heading>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
@@ -41,11 +41,11 @@ export function FAQ() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="border-b border-border last:border-b-0"
+              className="border-b border-purple-200 last:border-b-0 bg-white/60 backdrop-blur-sm rounded-lg mb-4 shadow-sm hover:shadow-md transition-all duration-300"
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full py-6 text-left flex items-center justify-between hover:text-primary transition-colors duration-200"
+                className="w-full py-6 px-6 text-left flex items-center justify-between hover:text-purple-600 transition-colors duration-200"
                 aria-expanded={openIndex === index}
                 aria-controls={`faq-answer-${index}`}
               >

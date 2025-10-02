@@ -9,7 +9,7 @@ import { heroContent } from '@/content/site'
 
 export function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-background to-muted/20">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center hero-gradient">
       <Container className="relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,13 +23,13 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mb-8"
           >
-            <Heading level={1} className="mb-6 text-balance">
+            <Heading level={1} className="mb-6 text-balance text-white drop-shadow-lg">
               {heroContent.headline}
             </Heading>
-            <p className="text-xl sm:text-2xl text-muted-foreground mb-8 text-balance">
+            <p className="text-xl sm:text-2xl text-white/90 mb-8 text-balance drop-shadow">
               {heroContent.subheading}
             </p>
-            <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto text-balance">
+            <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto text-balance">
               {heroContent.description}
             </p>
           </motion.div>
@@ -42,7 +42,7 @@ export function Hero() {
           >
             <Button
               size="xl"
-              className="group"
+              className="group bg-white text-purple-600 hover:bg-purple-50 border-2 border-white shadow-xl"
               onClick={() => {
                 document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
               }}
@@ -54,7 +54,7 @@ export function Hero() {
             <Button
               variant="outline"
               size="xl"
-              className="group"
+              className="group bg-transparent text-white border-2 border-white hover:bg-white hover:text-purple-600 shadow-xl"
               onClick={() => {
                 document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })
               }}
