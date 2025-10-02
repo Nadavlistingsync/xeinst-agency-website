@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Xeinst Custom Software Agency | Solving Your Biggest Problems',
   description: 'We take people\'s biggest problems and make software to fix them. Specializing in custom software solutions for real estate agents and construction companies.',
   keywords: ['custom software', 'real estate software', 'construction software', 'business automation', 'problem solving'],
-  authors: [{ name: 'Nadav Benedek', email: 'nadav.benedek@xeinst.com' }],
+  authors: [{ name: 'Nadav Benedek' }],
   creator: 'Xeinst Custom Software Agency',
   publisher: 'Xeinst Custom Software Agency',
   formatDetection: {

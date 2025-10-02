@@ -1,8 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { contactFormSchema } from '@/lib/validation'
-import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+const getResend = () => {
+  if (process.env.RESEND_API_KEY) {
+    const { Resend } = require('resend')
+    return new Resend(process.env.RESEND_API_KEY)
+  }
+  return null
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -36,13 +41,14 @@ Submitted at: ${new Date().toLocaleString()}
     `.trim()
 
     // Send email using Resend
-    if (process.env.RESEND_API_KEY) {
+    const resend = getResend()
+    if (resend) {
       const { data, error } = await resend.emails.send({
         from: process.env.CONTACT_FROM_EMAIL || 'website@xeinst.com',
         to: process.env.CONTACT_TO_EMAIL || 'nadav.benedek@xeinst.com',
         subject: `New Contact Form Submission from ${validatedData.name}`,
         text: emailContent,
-        replyTo: validatedData.email,
+        reply_to: validatedData.email,
       })
 
       if (error) {
