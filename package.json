@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "vercel --prod",
+    "setup-env": "bash scripts/setup-env.sh",
+    "test-contact": "node scripts/test-contact-api.js"
   },
   "dependencies": {
     "next": "14.0.0",
