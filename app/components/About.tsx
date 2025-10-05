@@ -8,7 +8,7 @@ import { aboutContent } from '@/content/site'
 
 export function About() {
   return (
-    <Section id="about" className="bg-gradient-to-br from-blue-50 to-purple-50">
+    <Section id="about" className="about-section">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -17,10 +17,10 @@ export function About() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <Heading level={2} className="mb-6 gradient-text">
+          <Heading level={2} className="mb-6 text-black">
             {aboutContent.headline}
           </Heading>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto text-balance">
             {aboutContent.description}
           </p>
         </motion.div>
@@ -36,12 +36,12 @@ export function About() {
               className="text-center"
             >
               <div className="mb-6">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 text-white rounded-full text-2xl font-bold mb-4 shadow-lg">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-black text-white rounded-full text-2xl font-bold mb-4 shadow-lg">
                   {step.step}
                 </div>
               </div>
-              <h3 className="text-xl font-semibold mb-4">{step.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">
+              <h3 className="text-xl font-semibold mb-4 text-black">{step.title}</h3>
+              <p className="text-gray-600 leading-relaxed">
                 {step.description}
               </p>
             </motion.div>

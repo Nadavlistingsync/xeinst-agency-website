@@ -16,7 +16,7 @@ export function FAQ() {
   }
 
   return (
-    <Section id="faq" className="bg-gradient-to-br from-purple-50 to-pink-50">
+    <Section id="faq" className="faq-section">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -25,10 +25,10 @@ export function FAQ() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <Heading level={2} className="mb-6 gradient-text">
+          <Heading level={2} className="mb-6 text-black">
             {faqContent.headline}
           </Heading>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-balance">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto text-balance">
             {faqContent.description}
           </p>
         </motion.div>
@@ -41,20 +41,20 @@ export function FAQ() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="border-b border-purple-200 last:border-b-0 bg-white/60 backdrop-blur-sm rounded-lg mb-4 shadow-sm hover:shadow-md transition-all duration-300"
+              className="border-b border-gray-200 last:border-b-0 bg-white rounded-lg mb-4 shadow-sm hover:shadow-md transition-all duration-300"
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full py-6 px-6 text-left flex items-center justify-between hover:text-purple-600 transition-colors duration-200"
+                className="w-full py-6 px-6 text-left flex items-center justify-between hover:text-black transition-colors duration-200"
                 aria-expanded={openIndex === index}
                 aria-controls={`faq-answer-${index}`}
               >
-                <span className="text-lg font-semibold pr-8">{faq.question}</span>
+                <span className="text-lg font-semibold pr-8 text-black">{faq.question}</span>
                 <div className="flex-shrink-0">
                   {openIndex === index ? (
-                    <Minus className="h-5 w-5" />
+                    <Minus className="h-5 w-5 text-black" />
                   ) : (
-                    <Plus className="h-5 w-5" />
+                    <Plus className="h-5 w-5 text-black" />
                   )}
                 </div>
               </button>
@@ -70,7 +70,7 @@ export function FAQ() {
                     className="overflow-hidden"
                   >
                     <div className="pb-6 pr-12">
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-gray-600 leading-relaxed">
                         {faq.answer}
                       </p>
                     </div>

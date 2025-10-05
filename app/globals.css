@@ -118,12 +118,24 @@ html {
   }
 }
 
-/* Clean modern design */
+/* Clean modern design - unified black and white */
 .hero-section {
   background: #000000;
 }
 
+.about-section {
+  background: #ffffff;
+}
+
 .services-section {
+  background: #ffffff;
+}
+
+.testimonials-section {
+  background: #ffffff;
+}
+
+.faq-section {
   background: #ffffff;
 }
 
