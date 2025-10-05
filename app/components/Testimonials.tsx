@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Star, Quote } from 'lucide-react'
+import { CheckCircle } from 'lucide-react'
 import { Container } from './ui/Container'
 import { Heading } from './ui/Heading'
 import { Section } from './ui/Section'
@@ -27,35 +27,26 @@ export function Testimonials() {
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-          {testimonialsContent.testimonials.map((testimonial, index) => (
+          {testimonialsContent.features.map((feature, index) => (
             <motion.div
-              key={testimonial.name}
+              key={feature.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
               className="relative p-8 bg-white rounded-lg border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <Quote className="absolute top-6 right-6 h-8 w-8 text-gray-400" />
-              
-              <div className="flex items-center mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 text-black fill-current" />
-                ))}
-              </div>
-
-              <blockquote className="text-lg text-gray-600 mb-6 leading-relaxed">
-                "{testimonial.content}"
-              </blockquote>
-
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center text-white font-semibold text-lg mr-4 shadow-md">
-                  {testimonial.name.split(' ').map(n => n[0]).join('')}
+              <div className="flex items-start">
+                <div className="flex-shrink-0 w-8 h-8 bg-black rounded-full flex items-center justify-center mr-4 mt-1">
+                  <CheckCircle className="h-5 w-5 text-white" />
                 </div>
                 <div>
-                  <div className="font-semibold text-black">{testimonial.name}</div>
-                  <div className="text-sm text-gray-600">{testimonial.role}</div>
-                  <div className="text-sm text-black font-medium">{testimonial.company}</div>
+                  <h3 className="text-xl font-semibold mb-3 text-black">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {feature.description}
+                  </p>
                 </div>
               </div>
             </motion.div>

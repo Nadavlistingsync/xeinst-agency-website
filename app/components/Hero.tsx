@@ -9,7 +9,7 @@ import { heroContent } from '@/content/site'
 
 export function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center hero-section">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center hero-section pt-20">
       <Container className="relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

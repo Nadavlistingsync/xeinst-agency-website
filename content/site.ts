@@ -92,40 +92,24 @@ export const servicesContent = {
 }
 
 export const testimonialsContent = {
-  headline: "What Our Clients Say",
-  description: "See how we've helped real estate agents and construction companies solve their biggest problems.",
-  testimonials: [
+  headline: "Why Choose Xeinst",
+  description: "We focus on solving real problems with custom software solutions that deliver measurable results.",
+  features: [
     {
-      name: "Sarah Mitchell",
-      role: "Real Estate Broker",
-      company: "Mitchell Properties",
-      content: "Xeinst built us a custom CRM that connects with all our listing platforms. What used to take 3 hours now takes 15 minutes. Our productivity has increased by 300%.",
-      avatar: "/testimonials/sarah-mitchell.jpg",
-      rating: 5,
+      title: "Problem-First Approach",
+      description: "We start by understanding your biggest challenges, then build software that directly addresses them.",
     },
     {
-      name: "Mike Rodriguez",
-      role: "Construction Manager",
-      company: "Rodriguez Builders",
-      content: "The project management software they created for us has completely transformed how we handle estimates and scheduling. We've reduced project delays by 60%.",
-      avatar: "/testimonials/mike-rodriguez.jpg",
-      rating: 5,
+      title: "Industry Expertise",
+      description: "Specialized experience in real estate and construction industries with deep understanding of workflows.",
     },
     {
-      name: "Jennifer Chen",
-      role: "Real Estate Agent",
-      company: "Chen Realty Group",
-      content: "Their lead management system has helped us close 40% more deals. The automated follow-up features are a game-changer for our business.",
-      avatar: "/testimonials/jennifer-chen.jpg",
-      rating: 5,
+      title: "Measurable Results",
+      description: "Every solution we build comes with clear metrics and ROI tracking to prove its value.",
     },
     {
-      name: "David Thompson",
-      role: "General Contractor",
-      company: "Thompson Construction",
-      content: "The inventory tracking system they built has eliminated our material waste problems. We've saved over $50,000 in the first year alone.",
-      avatar: "/testimonials/david-thompson.jpg",
-      rating: 5,
+      title: "Ongoing Support",
+      description: "We don't just build and leave - we provide continuous support and optimization for your success.",
     },
   ],
 }
