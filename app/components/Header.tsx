@@ -33,11 +33,7 @@ export function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-lg' 
-          : 'bg-transparent'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-lg transition-all duration-300"
     >
       <Container>
         <div className="flex items-center justify-between py-4">
@@ -50,9 +46,7 @@ export function Header() {
           >
             <button
               onClick={() => scrollToSection('#hero')}
-              className={`text-2xl font-bold transition-colors duration-200 ${
-                isScrolled ? 'text-black' : 'text-white'
-              } hover:opacity-80`}
+              className="text-2xl font-bold text-black transition-colors duration-200 hover:opacity-80"
             >
               {siteConfig.name.split(' ')[0]}
             </button>
@@ -69,9 +63,7 @@ export function Header() {
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className={`text-sm font-medium transition-colors duration-200 hover:opacity-80 ${
-                  isScrolled ? 'text-gray-700 hover:text-black' : 'text-white/90 hover:text-white'
-                }`}
+                className="text-sm font-medium text-gray-700 hover:text-black transition-colors duration-200 hover:opacity-80"
               >
                 {item.name}
               </button>
@@ -87,11 +79,7 @@ export function Header() {
           >
             <Button
               onClick={() => scrollToSection('#contact')}
-              className={`${
-                isScrolled 
-                  ? 'bg-black text-white hover:bg-gray-800' 
-                  : 'bg-white text-black hover:bg-gray-100'
-              } shadow-lg`}
+              className="bg-black text-white hover:bg-gray-800 shadow-lg"
             >
               Get Started
             </Button>
@@ -103,11 +91,7 @@ export function Header() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`md:hidden p-2 rounded-lg transition-colors duration-200 ${
-              isScrolled 
-                ? 'text-black hover:bg-gray-100' 
-                : 'text-white hover:bg-white/10'
-            }`}
+            className="md:hidden p-2 rounded-lg text-black hover:bg-gray-100 transition-colors duration-200"
           >
             {isMobileMenuOpen ? (
               <X className="h-6 w-6" />

@@ -14,7 +14,7 @@ export function Footer() {
   }
 
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-white text-black border-t border-gray-200">
       <Container>
         <div className="py-16">
           {/* Main Footer Content */}
@@ -28,31 +28,31 @@ export function Footer() {
               className="md:col-span-2"
             >
               <h3 className="text-2xl font-bold mb-4">{siteConfig.name}</h3>
-              <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
+              <p className="text-gray-600 mb-6 max-w-md leading-relaxed">
                 {siteConfig.description}
               </p>
               
               {/* Contact Info */}
               <div className="space-y-3">
-                <div className="flex items-center text-gray-300">
+                <div className="flex items-center text-gray-600">
                   <Mail className="h-4 w-4 mr-3" />
                   <a 
                     href={`mailto:${siteConfig.contact.email}`}
-                    className="hover:text-white transition-colors duration-200"
+                    className="hover:text-black transition-colors duration-200"
                   >
                     {siteConfig.contact.email}
                   </a>
                 </div>
-                <div className="flex items-center text-gray-300">
+                <div className="flex items-center text-gray-600">
                   <Phone className="h-4 w-4 mr-3" />
                   <a 
                     href={`tel:${siteConfig.contact.phone}`}
-                    className="hover:text-white transition-colors duration-200"
+                    className="hover:text-black transition-colors duration-200"
                   >
                     {siteConfig.contact.phone}
                   </a>
                 </div>
-                <div className="flex items-center text-gray-300">
+                <div className="flex items-center text-gray-600">
                   <MapPin className="h-4 w-4 mr-3" />
                   <span>New York, NY</span>
                 </div>
@@ -72,7 +72,7 @@ export function Footer() {
                   <li key={item.name}>
                     <button
                       onClick={() => scrollToSection(item.href)}
-                      className="text-gray-300 hover:text-white transition-colors duration-200 text-left"
+                      className="text-gray-600 hover:text-black transition-colors duration-200 text-left"
                     >
                       {item.name}
                     </button>
@@ -89,7 +89,7 @@ export function Footer() {
               viewport={{ once: true }}
             >
               <h4 className="text-lg font-semibold mb-4">Services</h4>
-              <ul className="space-y-3 text-gray-300">
+              <ul className="space-y-3 text-gray-600">
                 <li>Custom Software Development</li>
                 <li>Process Automation</li>
                 <li>Data Management Systems</li>
@@ -106,10 +106,10 @@ export function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}
-            className="border-t border-gray-800 pt-8"
+            className="border-t border-gray-200 pt-8"
           >
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <div className="text-gray-400 text-sm mb-4 md:mb-0">
+              <div className="text-gray-600 text-sm mb-4 md:mb-0">
                 © {new Date().getFullYear()} {siteConfig.name}. All rights reserved.
               </div>
               
@@ -120,7 +120,7 @@ export function Footer() {
                     href={siteConfig.links.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                    className="text-gray-600 hover:text-black transition-colors duration-200"
                   >
                     GitHub
                   </a>
@@ -130,7 +130,7 @@ export function Footer() {
                     href={siteConfig.links.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                    className="text-gray-600 hover:text-black transition-colors duration-200"
                   >
                     LinkedIn
                   </a>
@@ -140,7 +140,7 @@ export function Footer() {
                     href={siteConfig.links.twitter}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-white transition-colors duration-200"
+                    className="text-gray-600 hover:text-black transition-colors duration-200"
                   >
                     Twitter
                   </a>

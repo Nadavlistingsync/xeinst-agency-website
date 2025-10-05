@@ -118,9 +118,9 @@ html {
   }
 }
 
-/* Clean modern design - unified black and white */
+/* Clean modern design - unified white background with black text */
 .hero-section {
-  background: #000000;
+  background: #ffffff;
 }
 
 .about-section {
@@ -140,5 +140,5 @@ html {
 }
 
 .contact-section {
-  background: #000000;
+  background: #ffffff;
 }

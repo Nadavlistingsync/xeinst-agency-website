@@ -70,10 +70,10 @@ export function Contact() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <Heading level={2} className="mb-6 text-white">
+          <Heading level={2} className="mb-6 text-black">
             {contactContent.headline}
           </Heading>
-          <p className="text-lg text-white max-w-3xl mx-auto text-balance">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto text-balance">
             {contactContent.description}
           </p>
         </motion.div>
@@ -89,7 +89,7 @@ export function Contact() {
           >
             <div>
               <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
-              <p className="text-white mb-8 leading-relaxed">
+              <p className="text-gray-600 mb-8 leading-relaxed">
                 Ready to solve your biggest problem? We'd love to hear from you. 
                 Send us a message and we'll respond within 24 hours.
               </p>
@@ -109,12 +109,12 @@ export function Contact() {
                     viewport={{ once: true }}
                     className="flex items-center group hover:text-primary transition-colors duration-200"
                   >
-                    <div className="flex-shrink-0 w-12 h-12 bg-white text-black rounded-lg flex items-center justify-center mr-4 group-hover:bg-gray-100 transition-all duration-200 shadow-lg">
+                    <div className="flex-shrink-0 w-12 h-12 bg-black text-white rounded-lg flex items-center justify-center mr-4 group-hover:bg-gray-800 transition-all duration-200 shadow-lg">
                       <IconComponent className="h-5 w-5" />
                     </div>
                     <div>
-                      <div className="font-semibold text-white">{info.label}</div>
-                      <div className="text-white">{info.value}</div>
+                      <div className="font-semibold text-black">{info.label}</div>
+                      <div className="text-gray-600">{info.value}</div>
                     </div>
                   </motion.a>
                 )
@@ -128,7 +128,7 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-white p-8 rounded-lg border border-gray-200 shadow-xl"
+            className="bg-gray-50 p-8 rounded-lg border border-gray-200 shadow-xl"
           >
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               {/* Honeypot field */}

@@ -23,13 +23,13 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mb-8"
           >
-            <Heading level={1} className="mb-6 text-balance text-white drop-shadow-lg">
+            <Heading level={1} className="mb-6 text-balance text-black">
               {heroContent.headline}
             </Heading>
-            <p className="text-xl sm:text-2xl text-white/90 mb-8 text-balance drop-shadow">
+            <p className="text-xl sm:text-2xl text-gray-700 mb-8 text-balance">
               {heroContent.subheading}
             </p>
-            <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto text-balance">
+            <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto text-balance">
               {heroContent.description}
             </p>
           </motion.div>
@@ -42,7 +42,7 @@ export function Hero() {
           >
             <Button
               size="xl"
-              className="group bg-white text-black hover:bg-gray-100 border-2 border-white shadow-xl"
+              className="group bg-black text-white hover:bg-gray-800 border-2 border-black shadow-xl"
               onClick={() => {
                 document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
               }}
@@ -54,7 +54,7 @@ export function Hero() {
             <Button
               variant="outline"
               size="xl"
-              className="group bg-transparent text-white border-2 border-white hover:bg-white hover:text-black shadow-xl"
+              className="group bg-transparent text-black border-2 border-black hover:bg-black hover:text-white shadow-xl"
               onClick={() => {
                 document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })
               }}
@@ -81,11 +81,11 @@ export function Hero() {
           transition={{ duration: 1.5, delay: 1 }}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         >
-          <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex justify-center">
+          <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
             <motion.div
               animate={{ y: [0, 12, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
-              className="w-1 h-3 bg-muted-foreground rounded-full mt-2"
+              className="w-1 h-3 bg-gray-400 rounded-full mt-2"
             />
           </div>
         </motion.div>
