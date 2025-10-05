@@ -118,26 +118,15 @@ html {
   }
 }
 
-/* Colorful enhancements */
-.gradient-bg {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+/* Clean modern design */
+.hero-section {
+  background: #000000;
 }
 
-.gradient-text {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+.services-section {
+  background: #ffffff;
 }
 
-.hero-gradient {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-}
-
-.services-gradient {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-}
-
-.contact-gradient {
-  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+.contact-section {
+  background: #000000;
 }

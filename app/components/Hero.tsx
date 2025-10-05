@@ -9,7 +9,7 @@ import { heroContent } from '@/content/site'
 
 export function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center hero-gradient">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center hero-section">
       <Container className="relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,7 +42,7 @@ export function Hero() {
           >
             <Button
               size="xl"
-              className="group bg-white text-purple-600 hover:bg-purple-50 border-2 border-white shadow-xl"
+              className="group bg-white text-black hover:bg-gray-100 border-2 border-white shadow-xl"
               onClick={() => {
                 document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
               }}
@@ -54,7 +54,7 @@ export function Hero() {
             <Button
               variant="outline"
               size="xl"
-              className="group bg-transparent text-white border-2 border-white hover:bg-white hover:text-purple-600 shadow-xl"
+              className="group bg-transparent text-white border-2 border-white hover:bg-white hover:text-black shadow-xl"
               onClick={() => {
                 document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })
               }}
