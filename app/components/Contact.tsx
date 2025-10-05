@@ -46,10 +46,13 @@ export function Contact() {
         body: JSON.stringify(data),
       })
 
+      const result = await response.json()
+
       if (response.ok) {
         setSubmitStatus('success')
         reset()
       } else {
+        console.error('Form submission error:', result)
         setSubmitStatus('error')
       }
     } catch (error) {
