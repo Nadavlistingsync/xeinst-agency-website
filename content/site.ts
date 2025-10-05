@@ -25,7 +25,7 @@ export const navigation = [
 export const heroContent = {
   headline: "We Solve Your Biggest Problems",
   subheading: "Custom software solutions that transform how real estate agents and construction companies work",
-  description: "Stop wasting time on repetitive tasks and outdated systems. We build software that actually solves your problems and grows your business.",
+  description: "Stop wasting time on repetitive tasks and outdated systems. We build software that actually solves your problems and grows your business. You only pay 20% of the value we create or a fixed price based on results.",
   primaryCta: "Get Started",
   secondaryCta: "Our Services",
   primaryCtaHref: "#contact",
@@ -56,7 +56,7 @@ export const aboutContent = {
 
 export const servicesContent = {
   headline: "Our Services",
-  description: "We specialize in custom software solutions for real estate and construction industries.",
+  description: "We specialize in custom software solutions for real estate and construction industries. Our value-based pricing means you only pay when we deliver results.",
   services: [
     {
       icon: "Code",
@@ -104,8 +104,8 @@ export const testimonialsContent = {
       description: "Specialized experience in real estate and construction industries with deep understanding of workflows.",
     },
     {
-      title: "Measurable Results",
-      description: "Every solution we build comes with clear metrics and ROI tracking to prove its value.",
+      title: "Measurable Results & Value-Based Pricing",
+      description: "Every solution we build comes with clear metrics and ROI tracking to prove its value. Our pricing model ensures you only pay 20% of the value we create or a fixed price based on results.",
     },
     {
       title: "Ongoing Support",
@@ -123,8 +123,8 @@ export const faqContent = {
       answer: "Timeline depends on complexity, but most projects range from 4-12 weeks. We provide detailed project timelines during our initial consultation and keep you updated throughout development.",
     },
     {
-      question: "What's the typical cost for custom software development?",
-      answer: "Costs vary based on features and complexity. Most projects range from $15,000-$100,000. We offer flexible payment plans and always provide transparent pricing with no hidden fees.",
+      question: "How do you determine pricing for custom software development?",
+      answer: "We use a value-based pricing model that aligns our success with yours. We charge 20% of the money we save you or the revenue we help you generate, OR we set a fixed price based on the value creation equation. This ensures you only pay when you see real results from our software solutions.",
     },
     {
       question: "Do you provide ongoing support after launch?",
@@ -155,7 +155,7 @@ export const faqContent = {
 
 export const contactContent = {
   headline: "Ready to Solve Your Biggest Problem?",
-  description: "Let's discuss how custom software can transform your business. Get in touch for a free consultation.",
+  description: "Let's discuss how custom software can transform your business. With our value-based pricing, you only pay when we deliver measurable results. Get in touch for a free consultation.",
   info: [
     {
       icon: "Phone",
