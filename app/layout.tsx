@@ -8,9 +8,9 @@ import { Footer } from './components/Footer'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Xeinst Media Agency | SMMA & Video Clipping Services',
-  description: 'Transform your content into viral gold with professional video clipping and full-service social media marketing. We help content creators and businesses dominate TikTok, Instagram, YouTube, and more.',
-  keywords: ['SMMA', 'social media marketing', 'video clipping', 'content creation', 'TikTok marketing', 'Instagram Reels', 'YouTube Shorts', 'viral content', 'video editing'],
+  title: 'Xeinst Media Agency | Real Estate Social Media Marketing & Video Clipping',
+  description: 'Transform your property listings into viral content. We help real estate agents dominate social media, generate quality leads, and close more deals through expert video clipping and SMMA services.',
+  keywords: ['real estate social media marketing', 'real estate video editing', 'property video clipping', 'realtor TikTok', 'real estate Instagram Reels', 'real estate YouTube Shorts', 'real estate lead generation', 'property tour videos', 'realtor marketing'],
   authors: [{ name: 'Nadav Benedek' }],
   creator: 'Xeinst Media Agency',
   publisher: 'Xeinst Media Agency',
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Xeinst Media Agency | SMMA & Video Clipping Services',
-    description: 'Transform your content into viral gold with professional video clipping and full-service social media marketing. We help content creators and businesses dominate TikTok, Instagram, YouTube, and more.',
+    title: 'Xeinst Media Agency | Real Estate Social Media Marketing & Video Clipping',
+    description: 'Transform your property listings into viral content. We help real estate agents dominate social media, generate quality leads, and close more deals through expert video clipping and SMMA services.',
     url: 'https://xeinst.com',
     siteName: 'Xeinst Media Agency',
     images: [
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Xeinst Media Agency - SMMA & Video Clipping',
+        alt: 'Xeinst Media Agency - Real Estate Social Media Marketing',
       },
     ],
     locale: 'en_US',
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Xeinst Media Agency | SMMA & Video Clipping Services',
-    description: 'Transform your content into viral gold with professional video clipping and full-service social media marketing. We help content creators and businesses dominate TikTok, Instagram, YouTube, and more.',
+    title: 'Xeinst Media Agency | Real Estate Social Media Marketing & Video Clipping',
+    description: 'Transform your property listings into viral content. We help real estate agents dominate social media, generate quality leads, and close more deals through expert video clipping and SMMA services.',
     images: ['/og-image.jpg'],
     creator: '@xeinst',
   },

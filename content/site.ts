@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Xeinst Media Agency",
-  description: "We transform content creators and businesses into viral sensations through expert social media marketing and professional video clipping.",
+  description: "We help real estate agents dominate social media, generate quality leads, and close more deals through expert video clipping and social media marketing.",
   url: "https://xeinst.com",
   ogImage: "https://xeinst.com/og-image.jpg",
   links: {
@@ -24,9 +24,9 @@ export const navigation = [
 ]
 
 export const heroContent = {
-  headline: "Turn Your Content Into Viral Gold",
-  subheading: "Full-service social media marketing and professional video clipping that gets you noticed",
-  description: "Stop posting content that gets ignored. We transform your raw footage into scroll-stopping clips and manage your entire social media presence. Our proven strategies have generated millions of views for content creators, influencers, and businesses.",
+  headline: "Turn Your Listings Into Viral Content",
+  subheading: "Social media marketing and video clipping for real estate agents who want to dominate their market",
+  description: "Stop posting property tours that get ignored. We transform your listing videos and property content into scroll-stopping clips that generate qualified leads. Our proven strategies help real estate agents build massive followings and close more deals through social media.",
   primaryCta: "Get Started",
   secondaryCta: "Our Services",
   primaryCtaHref: "#contact",
@@ -35,128 +35,128 @@ export const heroContent = {
 
 export const aboutContent = {
   headline: "How We Work",
-  description: "We don't just post content – we create viral moments. Our approach is simple but powerful: capture attention, build engagement, and convert viewers into loyal followers.",
+  description: "We don't just post listings – we build your personal brand as the go-to real estate agent in your market. Our approach transforms property content into lead-generating machines.",
   process: [
     {
       step: "01",
-      title: "Analyze Your Content",
-      description: "We study your raw footage, brand, and audience to identify the most engaging moments and viral potential.",
+      title: "Analyze Your Market",
+      description: "We study your listings, local market, and target buyers to identify the most engaging angles and viral potential for your properties.",
     },
     {
       step: "02", 
       title: "Create & Optimize",
-      description: "Our expert editors transform your content into scroll-stopping clips optimized for each platform's algorithm.",
+      description: "Our expert editors transform your property tours and agent content into scroll-stopping clips optimized for TikTok, Instagram Reels, and YouTube Shorts.",
     },
     {
       step: "03",
-      title: "Post & Grow",
-      description: "We manage your posting schedule, engage with your audience, and continuously optimize for maximum reach and growth.",
+      title: "Generate Leads",
+      description: "We manage your posting schedule, engage with potential buyers, and track which content generates the most qualified leads for your business.",
     },
   ],
 }
 
 export const servicesContent = {
   headline: "Our Services",
-  description: "We offer complete social media marketing and video production services for content creators, influencers, and businesses ready to dominate their niche.",
+  description: "Complete social media marketing and video production services designed specifically for real estate agents who want to generate more leads and close more deals.",
   services: [
     {
       icon: "Video",
-      title: "Professional Video Clipping",
-      description: "Expert editing that turns your long-form content into viral short-form clips for TikTok, Instagram Reels, and YouTube Shorts.",
+      title: "Property Video Clipping",
+      description: "Transform your property tours and listing videos into viral short-form clips for TikTok, Instagram Reels, and YouTube Shorts that showcase homes and attract buyers.",
     },
     {
       icon: "TrendingUp",
-      title: "Social Media Management",
-      description: "Full-service account management including content strategy, posting schedules, and audience engagement across all platforms.",
+      title: "Real Estate Social Media Management",
+      description: "Full-service account management tailored for agents - property showcases, market updates, agent lifestyle content, and direct engagement with potential buyers.",
     },
     {
       icon: "Target",
-      title: "Content Strategy & Planning",
-      description: "Data-driven content calendars designed to maximize engagement, growth, and brand consistency.",
+      title: "Lead Generation Strategy",
+      description: "Data-driven content calendars focused on attracting qualified buyers and sellers in your market with content that actually converts.",
     },
     {
       icon: "Film",
-      title: "Full Video Production",
-      description: "From script to final edit - complete video production services including filming, editing, color grading, and sound design.",
+      title: "Property Video Production",
+      description: "Professional property tour filming and editing - from luxury listings to virtual walkthroughs, we make every property look its absolute best.",
     },
     {
       icon: "BarChart",
-      title: "Analytics & Growth Optimization",
-      description: "Comprehensive performance tracking with monthly reports and continuous optimization to maximize your reach and engagement.",
+      title: "Performance & Lead Tracking",
+      description: "Detailed analytics showing which properties and content types generate the most leads, with monthly reports on engagement and conversion rates.",
     },
     {
       icon: "Megaphone",
-      title: "Paid Social Advertising",
-      description: "Strategic ad campaigns on Instagram, TikTok, Facebook, and YouTube that convert viewers into customers.",
+      title: "Targeted Real Estate Ads",
+      description: "Strategic ad campaigns on Instagram, Facebook, and YouTube targeting buyers and sellers in your specific market area and price range.",
     },
   ],
 }
 
 export const testimonialsContent = {
-  headline: "Why Choose Xeinst Media",
-  description: "We don't just create content – we build brands and grow audiences with proven strategies that deliver real results.",
+  headline: "Why Real Estate Agents Choose Xeinst Media",
+  description: "We specialize in helping real estate agents build personal brands, generate quality leads, and close more deals through strategic social media marketing.",
   features: [
     {
-      title: "Proven Track Record",
-      description: "We've generated millions of views and helped content creators grow from zero to thousands of engaged followers across all major platforms.",
+      title: "Real Estate Expertise",
+      description: "We understand the real estate industry inside and out. We know how to showcase properties, highlight agent value, and create content that resonates with buyers and sellers.",
     },
     {
-      title: "Platform Expertise",
-      description: "Deep understanding of TikTok, Instagram, YouTube, Twitter, and LinkedIn algorithms. We know what works and what doesn't.",
+      title: "Lead Generation Focus",
+      description: "Every piece of content is designed to generate qualified leads. We track which properties and content types drive the most inquiries and double down on what works.",
     },
     {
-      title: "Fast Turnaround & Quality",
-      description: "Professional-grade clips delivered within 24-48 hours. We combine speed with quality to keep your content calendar full and your audience engaged.",
+      title: "Fast Turnaround for Active Listings",
+      description: "Get your listing clips within 24-48 hours so you can promote new properties immediately. Strike while the iron is hot and attract buyers fast.",
     },
     {
-      title: "Data-Driven Strategy",
-      description: "Every decision is backed by analytics. We track what's working, double down on success, and continuously optimize your content strategy.",
+      title: "Proven Results for Agents",
+      description: "Our clients have generated millions of views on their property content, built massive local followings, and closed deals directly from social media leads.",
     },
   ],
 }
 
 export const faqContent = {
   headline: "Frequently Asked Questions",
-  description: "Everything you need to know about our social media marketing and video clipping services.",
+  description: "Everything real estate agents need to know about our social media marketing and video clipping services.",
   faqs: [
     {
-      question: "How many clips do I get per month?",
-      answer: "It depends on your package! Our starter plan includes 15 clips per month, growth plan offers 30 clips, and our premium plan provides 60+ clips monthly. All clips are professionally edited and optimized for each platform.",
+      question: "How many property clips do I get per month?",
+      answer: "It depends on your package! Our starter plan includes 15 clips per month (perfect for 3-5 listings), growth plan offers 30 clips, and our premium plan provides 60+ clips monthly. All clips are professionally edited and optimized for each platform.",
     },
     {
-      question: "What's the turnaround time for video clips?",
-      answer: "We deliver clips within 24-48 hours after receiving your raw footage. For urgent requests, we offer same-day turnaround for an additional fee. Our fast delivery ensures your content calendar stays full.",
+      question: "How fast can you edit clips for a new listing?",
+      answer: "We deliver listing clips within 24-48 hours after receiving your property tour footage. For hot listings or urgent requests, we offer same-day turnaround for an additional fee so you can start marketing immediately.",
     },
     {
-      question: "Which platforms do you create content for?",
-      answer: "We specialize in all major social media platforms including TikTok, Instagram (Reels & Stories), YouTube (Shorts & long-form), Twitter/X, LinkedIn, and Facebook. Each clip is optimized for the specific platform's format and algorithm.",
+      question: "Which social media platforms do you optimize for?",
+      answer: "We specialize in TikTok, Instagram (Reels & Stories), YouTube (Shorts & long-form), Facebook, and LinkedIn. Each property clip is customized for the platform's format, ideal for reaching different buyer demographics.",
     },
     {
-      question: "Do I need to provide the raw footage?",
-      answer: "Yes, you provide the raw footage and we handle the rest! We'll extract the most engaging moments, add captions, graphics, transitions, sound effects, and optimize everything for maximum engagement. We can also help with content strategy if you're not sure what to film.",
+      question: "What if I don't know how to film property tours?",
+      answer: "No problem! We provide filming guides and tips for shooting great property footage on your phone. Just send us the raw video and we'll transform it into professional clips with captions, music, graphics, and transitions.",
     },
     {
-      question: "Can you manage my entire social media presence?",
-      answer: "Absolutely! Our full-service social media management includes content creation, posting schedules, community engagement, analytics reporting, and growth strategy. We become your dedicated social media team.",
+      question: "Can you help me generate more buyer and seller leads?",
+      answer: "Absolutely! Our content strategy is specifically designed to generate qualified real estate leads. We create property showcases, market update content, agent lifestyle videos, and call-to-action posts that drive inquiries and consultations.",
     },
     {
-      question: "How do you measure success and ROI?",
-      answer: "We track key metrics including views, engagement rate, follower growth, reach, and conversion rates. You'll receive detailed monthly reports showing your growth and performance across all platforms with actionable insights.",
+      question: "How do you track which content generates leads?",
+      answer: "We track views, engagement, follower growth, and most importantly - lead inquiries tied to specific content. You'll receive monthly reports showing which properties and content types generated the most buyer interest and direct messages.",
     },
     {
-      question: "What if I don't like a clip you created?",
-      answer: "We offer unlimited revisions until you're 100% satisfied. Your success is our success, and we work closely with you to ensure every clip matches your brand and vision perfectly.",
+      question: "What if I don't like how a property clip turned out?",
+      answer: "We offer unlimited revisions until you're 100% satisfied. We know your reputation is on the line with every listing, so we work closely with you to ensure every clip showcases your properties perfectly.",
     },
     {
-      question: "Do you offer packages for businesses vs. content creators?",
-      answer: "Yes! We have specialized packages for both. Content creators get focused on personal branding and viral growth, while businesses receive brand-focused content, lead generation strategies, and ROI-driven campaigns tailored to their industry.",
+      question: "Do you run ads to promote my listings?",
+      answer: "Yes! Our premium package includes targeted Facebook and Instagram ad campaigns to boost your best listings and reach qualified buyers in your market. We handle targeting, creative, and optimization while you focus on showings and closings.",
     },
   ],
 }
 
 export const contactContent = {
-  headline: "Ready to Go Viral?",
-  description: "Let's discuss how we can transform your content and grow your social media presence. Get a free content audit and strategy session to see how we can take your brand to the next level.",
+  headline: "Ready to Dominate Your Market?",
+  description: "Let's discuss how we can transform your listings into viral content and generate more qualified leads. Get a free social media audit and custom strategy designed specifically for real estate agents.",
   info: [
     {
       icon: "Phone",
@@ -195,10 +195,10 @@ export const contactContent = {
       },
       {
         name: "company",
-        label: "Brand/Company Name",
+        label: "Brokerage/Team Name",
         type: "text",
         required: false,
-        placeholder: "Your brand or company name",
+        placeholder: "Your brokerage or team name",
       },
       {
         name: "phone",
@@ -212,18 +212,18 @@ export const contactContent = {
         label: "What Are Your Goals?",
         type: "textarea",
         required: true,
-        placeholder: "Tell us about your content and social media goals. What platforms are you on? What results are you looking for?",
+        placeholder: "Tell us about your goals... Are you looking to generate more buyer leads? Grow your personal brand? Get more listing appointments? How many listings do you typically have per month?",
       },
       {
         name: "message",
         label: "Additional Information",
         type: "textarea",
         required: false,
-        placeholder: "Current follower count, content type, budget range, or any other details...",
+        placeholder: "Current social media presence, target market (luxury, first-time buyers, etc.), average price point, or any other details...",
       },
     ],
-    submitText: "Get Free Consultation",
-    successMessage: "Thank you! We'll get back to you within 24 hours with a custom strategy.",
+    submitText: "Get Free Strategy Session",
+    successMessage: "Thank you! We'll get back to you within 24 hours with a custom strategy for your real estate business.",
     errorMessage: "Something went wrong. Please try again or contact us directly.",
   },
 }

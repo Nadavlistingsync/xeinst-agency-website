@@ -1,6 +1,6 @@
 # Xeinst Media Agency Website
 
-A modern, high-converting SMMA and video clipping agency website built with Next.js 14, TypeScript, and Tailwind CSS. Features a fully functional contact form, smooth animations, and Apple-inspired design optimized for social media marketing services.
+A modern, high-converting SMMA and video clipping agency website built with Next.js 14, TypeScript, and Tailwind CSS. Specifically designed for real estate agents who want to dominate social media and generate quality leads through viral property content.
 
 ## 🚀 Features
 
@@ -76,7 +76,7 @@ The contact form uses Resend for email delivery. To set it up:
 3. Add it to your `.env.local` file
 4. Configure your domain in Resend (optional, for better deliverability)
 
-The form captures lead information including social media goals, platform preferences, and budget range - perfect for qualifying SMMA and video clipping clients.
+The form captures lead information including real estate goals, listing volume, target market, and budget - perfect for qualifying real estate agent clients looking for social media marketing and video clipping services.
 
 ## 🎨 Customization
 
