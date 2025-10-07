@@ -1,6 +1,6 @@
-# Xeinst Custom Software Agency Website
+# Xeinst Media Agency Website
 
-A modern, minimalist agency website built with Next.js 14, TypeScript, and Tailwind CSS. Features a fully functional contact form, smooth animations, and Apple-inspired design.
+A modern, high-converting SMMA and video clipping agency website built with Next.js 14, TypeScript, and Tailwind CSS. Features a fully functional contact form, smooth animations, and Apple-inspired design optimized for social media marketing services.
 
 ## 🚀 Features
 
@@ -76,7 +76,7 @@ The contact form uses Resend for email delivery. To set it up:
 3. Add it to your `.env.local` file
 4. Configure your domain in Resend (optional, for better deliverability)
 
-The form will work without Resend (it will log to console), but for production, email delivery is recommended.
+The form captures lead information including social media goals, platform preferences, and budget range - perfect for qualifying SMMA and video clipping clients.
 
 ## 🎨 Customization
 
@@ -150,4 +150,4 @@ For support, email nadav.benedek@xeinst.com or call 347-616-4524.
 
 ---
 
-Built with ❤️ by [Xeinst Custom Software Agency](https://xeinst.com)
+Built with ❤️ by [Xeinst Media Agency](https://xeinst.com)

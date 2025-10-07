@@ -90,12 +90,12 @@ export function Footer() {
             >
               <h4 className="text-lg font-semibold mb-4">Services</h4>
               <ul className="space-y-3 text-gray-600">
-                <li>Custom Software Development</li>
-                <li>Process Automation</li>
-                <li>Data Management Systems</li>
-                <li>Mobile Applications</li>
-                <li>Cloud Integration</li>
-                <li>Ongoing Support</li>
+                <li>Video Clipping</li>
+                <li>Social Media Management</li>
+                <li>Content Strategy</li>
+                <li>Video Production</li>
+                <li>Analytics & Growth</li>
+                <li>Paid Advertising</li>
               </ul>
             </motion.div>
           </div>
@@ -115,14 +115,24 @@ export function Footer() {
               
               {/* Social Links */}
               <div className="flex space-x-6">
-                {siteConfig.links.github && (
+                {siteConfig.links.instagram && (
                   <a
-                    href={siteConfig.links.github}
+                    href={siteConfig.links.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-600 hover:text-black transition-colors duration-200"
                   >
-                    GitHub
+                    Instagram
+                  </a>
+                )}
+                {siteConfig.links.tiktok && (
+                  <a
+                    href={siteConfig.links.tiktok}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-black transition-colors duration-200"
+                  >
+                    TikTok
                   </a>
                 )}
                 {siteConfig.links.linkedin && (

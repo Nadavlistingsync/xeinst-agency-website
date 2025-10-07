@@ -1,19 +1,19 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Code, Users, Database, Smartphone, Cloud, Headphones } from 'lucide-react'
+import { Video, TrendingUp, Target, Film, BarChart, Megaphone } from 'lucide-react'
 import { Container } from './ui/Container'
 import { Heading } from './ui/Heading'
 import { Section } from './ui/Section'
 import { servicesContent } from '@/content/site'
 
 const iconMap = {
-  Code,
-  Users,
-  Database,
-  Smartphone,
-  Cloud,
-  Headphones,
+  Video,
+  TrendingUp,
+  Target,
+  Film,
+  BarChart,
+  Megaphone,
 }
 
 export function Services() {

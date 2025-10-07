@@ -8,12 +8,12 @@ import { Footer } from './components/Footer'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Xeinst Custom Software Agency | Solving Your Biggest Problems',
-  description: 'We take people\'s biggest problems and make software to fix them. Specializing in custom software solutions for real estate agents and construction companies.',
-  keywords: ['custom software', 'real estate software', 'construction software', 'business automation', 'problem solving'],
+  title: 'Xeinst Media Agency | SMMA & Video Clipping Services',
+  description: 'Transform your content into viral gold with professional video clipping and full-service social media marketing. We help content creators and businesses dominate TikTok, Instagram, YouTube, and more.',
+  keywords: ['SMMA', 'social media marketing', 'video clipping', 'content creation', 'TikTok marketing', 'Instagram Reels', 'YouTube Shorts', 'viral content', 'video editing'],
   authors: [{ name: 'Nadav Benedek' }],
-  creator: 'Xeinst Custom Software Agency',
-  publisher: 'Xeinst Custom Software Agency',
+  creator: 'Xeinst Media Agency',
+  publisher: 'Xeinst Media Agency',
   formatDetection: {
     email: false,
     address: false,
@@ -24,16 +24,16 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Xeinst Custom Software Agency | Solving Your Biggest Problems',
-    description: 'We take people\'s biggest problems and make software to fix them. Specializing in custom software solutions for real estate agents and construction companies.',
+    title: 'Xeinst Media Agency | SMMA & Video Clipping Services',
+    description: 'Transform your content into viral gold with professional video clipping and full-service social media marketing. We help content creators and businesses dominate TikTok, Instagram, YouTube, and more.',
     url: 'https://xeinst.com',
-    siteName: 'Xeinst Custom Software Agency',
+    siteName: 'Xeinst Media Agency',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Xeinst Custom Software Agency',
+        alt: 'Xeinst Media Agency - SMMA & Video Clipping',
       },
     ],
     locale: 'en_US',
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Xeinst Custom Software Agency | Solving Your Biggest Problems',
-    description: 'We take people\'s biggest problems and make software to fix them. Specializing in custom software solutions for real estate agents and construction companies.',
+    title: 'Xeinst Media Agency | SMMA & Video Clipping Services',
+    description: 'Transform your content into viral gold with professional video clipping and full-service social media marketing. We help content creators and businesses dominate TikTok, Instagram, YouTube, and more.',
     images: ['/og-image.jpg'],
     creator: '@xeinst',
   },
