@@ -499,10 +499,6 @@ export const servicePages = {
             title: 'Brand Development',
             description: 'Build a cohesive brand across all platforms with consistent visuals, messaging, and voice that makes you stand out in your market.',
           },
-          {
-            title: 'Ad Campaign Management',
-            description: 'Optional: Run targeted Facebook and Instagram ad campaigns to boost your best content and reach qualified buyers in your market.',
-          },
         ],
       },
       {
@@ -608,7 +604,6 @@ export const servicePages = {
           'Premium community management',
           'Real-time analytics dashboard',
           'Advanced growth strategies',
-          'Paid ad campaign management',
           'Personal brand development',
           'Weekly strategy calls',
           'Priority support',

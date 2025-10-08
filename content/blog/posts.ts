@@ -471,20 +471,6 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        heading: 'TikTok Ads for Real Estate Agents',
-        content: 'Organic growth is powerful, but paid ads accelerate results:',
-        subsections: [
-          {
-            heading: 'When to Use TikTok Ads',
-            content: 'Promote luxury listings, Build follower base faster, Target specific demographics, Promote open houses or events, Boost your best-performing content.',
-          },
-          {
-            heading: 'TikTok Ad Types',
-            content: 'In-Feed Ads: Appear in For You Page, Full-screen video ads, Can include website links. Spark Ads: Boost your organic posts, Maintain authentic feel, Use already-successful content. Budget: Start with $20-50/day testing, Scale winners to $100+/day.',
-          },
-        ],
-      },
-      {
         heading: 'Tools and Resources for Real Estate TikTok',
         content: 'Level up with these tools:',
         list: [
