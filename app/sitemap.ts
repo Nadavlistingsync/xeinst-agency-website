@@ -54,12 +54,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.9,
     },
-    {
-      url: 'https://xeinst.com/case-studies',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
+          {
+            url: 'https://xeinst.com/case-studies',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.8,
+          },
+          {
+            url: 'https://xeinst.com/careers',
+            lastModified: new Date(),
+            changeFrequency: 'monthly',
+            priority: 0.7,
+          },
     ...blogUrls,
   ]
 }
