@@ -3,8 +3,9 @@ import { Container } from '../components/ui/Container'
 import { Heading } from '../components/ui/Heading'
 import { Section } from '../components/ui/Section'
 import { Contact } from '../components/Contact'
-import { TrendingUp, Users, DollarSign, Video, Instagram, Play } from 'lucide-react'
+import { Users, DollarSign, Video, Instagram, Play, TrendingUp } from 'lucide-react'
 import { generateBreadcrumbSchema } from '@/lib/schema'
+import { CaseStudyButton } from '../components/CaseStudyButton'
 
 export const metadata: Metadata = {
   title: 'Real Estate Social Media Case Studies | Success Stories | Xeinst Media',
@@ -337,15 +338,9 @@ export default function CaseStudiesPage() {
                 Get started with a free strategy session. We'll analyze your current social media presence, 
                 identify opportunities, and show you exactly how we can help you generate more leads.
               </p>
-              <button
-                onClick={() => {
-                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
-                }}
-                className="bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center gap-2"
-              >
+              <CaseStudyButton className="bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center gap-2">
                 Get Your Free Strategy Session
-                <TrendingUp className="w-5 h-5" />
-              </button>
+              </CaseStudyButton>
             </div>
           </Container>
         </Section>

@@ -6,6 +6,7 @@ import { ServiceCTA } from '@/app/components/ServiceCTA'
 import { Contact } from '@/app/components/Contact'
 import { servicePages } from '@/content/services'
 import { generateServiceSchema, generateFAQSchema, generateBreadcrumbSchema } from '@/lib/schema'
+import { ServiceButton } from '@/app/components/ServiceButton'
 
 const service = servicePages.socialMediaManagement
 
@@ -130,10 +131,7 @@ export default function SocialMediaManagementPage() {
                       </li>
                     ))}
                   </ul>
-                  <button
-                    onClick={() => {
-                      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
-                    }}
+                  <ServiceButton
                     className={`w-full py-3 rounded-lg font-semibold transition-all ${
                       pkg.popular
                         ? 'bg-black text-white hover:bg-gray-800'
@@ -141,7 +139,7 @@ export default function SocialMediaManagementPage() {
                     }`}
                   >
                     Get Started
-                  </button>
+                  </ServiceButton>
                 </div>
               ))}
             </div>

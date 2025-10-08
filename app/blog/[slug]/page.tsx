@@ -7,7 +7,8 @@ import { Button } from '@/app/components/ui/Button'
 import { Contact } from '@/app/components/Contact'
 import { getBlogPost, getAllBlogPosts } from '@/content/blog/posts'
 import { generateArticleSchema, generateBreadcrumbSchema } from '@/lib/schema'
-import { ArrowRight, Calendar, Clock, User } from 'lucide-react'
+import { Calendar, Clock, User, ArrowRight } from 'lucide-react'
+import { BlogButton } from '@/app/components/BlogButton'
 
 interface BlogPostPageProps {
   params: {
@@ -183,16 +184,11 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
             <div className="max-w-3xl mx-auto text-center">
               <h2 className="text-3xl font-bold mb-6">{post.cta.headline}</h2>
               <p className="text-xl text-gray-300 mb-8">{post.cta.description}</p>
-              <Button
-                size="xl"
-                className="group bg-white text-black hover:bg-gray-100 border-2 border-white"
-                onClick={() => {
-                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
-                }}
+              <BlogButton
+                className="group bg-white text-black hover:bg-gray-100 border-2 border-white px-8 py-4 rounded-lg font-semibold transition-colors inline-flex items-center gap-2"
               >
                 {post.cta.buttonText}
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Button>
+              </BlogButton>
             </div>
           </Container>
         </Section>

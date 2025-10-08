@@ -3,8 +3,9 @@ import { Container } from '../components/ui/Container'
 import { Heading } from '../components/ui/Heading'
 import { Section } from '../components/ui/Section'
 import { Contact } from '../components/Contact'
-import { Check, ArrowRight } from 'lucide-react'
+import { Check } from 'lucide-react'
 import { generateBreadcrumbSchema } from '@/lib/schema'
+import { PricingButton } from '../components/PricingButton'
 
 export const metadata: Metadata = {
   title: 'Real Estate Video Editing Pricing | Packages for Realtors | Xeinst Media',
@@ -254,10 +255,7 @@ export default function PricingPage() {
                       </li>
                     ))}
                   </ul>
-                  <button
-                    onClick={() => {
-                      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
-                    }}
+                  <PricingButton
                     className={`w-full py-4 rounded-lg font-semibold transition-all flex items-center justify-center gap-2 ${
                       pkg.popular
                         ? 'bg-black text-white hover:bg-gray-800'
@@ -265,8 +263,7 @@ export default function PricingPage() {
                     }`}
                   >
                     {pkg.cta}
-                    <ArrowRight className="w-4 h-4" />
-                  </button>
+                  </PricingButton>
                 </div>
               ))}
             </div>
@@ -317,10 +314,7 @@ export default function PricingPage() {
                       </li>
                     ))}
                   </ul>
-                  <button
-                    onClick={() => {
-                      document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
-                    }}
+                  <PricingButton
                     className={`w-full py-4 rounded-lg font-semibold transition-all flex items-center justify-center gap-2 ${
                       pkg.popular
                         ? 'bg-black text-white hover:bg-gray-800'
@@ -328,8 +322,7 @@ export default function PricingPage() {
                     }`}
                   >
                     {pkg.cta}
-                    <ArrowRight className="w-4 h-4" />
-                  </button>
+                  </PricingButton>
                 </div>
               ))}
             </div>
@@ -427,15 +420,9 @@ export default function PricingPage() {
                 Get started today with a free strategy session. We'll analyze your current social media presence 
                 and show you exactly how we can generate more leads for your business.
               </p>
-              <button
-                onClick={() => {
-                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
-                }}
-                className="bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center gap-2"
-              >
+              <PricingButton className="bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center gap-2">
                 Get Your Free Strategy Session
-                <ArrowRight className="w-5 h-5" />
-              </button>
+              </PricingButton>
             </div>
           </Container>
         </Section>

@@ -53,6 +53,7 @@ export const blogPosts: BlogPost[] = [
         subsections: [
           {
             heading: 'The Impact of Professional Video Editing',
+            content: 'Professional video editing transforms raw property footage into engaging content that captures attention and drives action.',
             list: [
               'Edited videos get 1200% more shares than text and images combined',
               'Property videos under 15 seconds have 80% completion rates vs 35% for longer videos',
@@ -72,6 +73,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             heading: 'Hardware Requirements',
+            content: 'Having the right hardware ensures smooth editing and professional results.',
             list: [
               'Computer: Minimum 16GB RAM, preferably 32GB for 4K editing',
               'Storage: External SSD for video files (1TB minimum)',
@@ -221,6 +223,7 @@ export const blogPosts: BlogPost[] = [
         subsections: [
           {
             heading: 'Editing Software',
+            content: 'Choose the right editing software based on your skill level and budget.',
             list: [
               'CapCut: Free, beginner-friendly, built-in trending effects',
               'Adobe Premiere Pro: Industry standard, professional features',
@@ -230,6 +233,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             heading: 'Music Sources',
+            content: 'High-quality audio is essential for professional real estate videos.',
             list: [
               'Epidemic Sound: High-quality licensed music ($15/month)',
               'Artlist: Unlimited downloads, real estate-friendly ($16/month)',
@@ -239,6 +243,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             heading: 'Additional Tools',
+            content: 'These tools help streamline your workflow and improve video quality.',
             list: [
               'Canva: Create thumbnails and text graphics',
               'Motion Array: Templates and presets for effects',
@@ -284,6 +289,7 @@ export const blogPosts: BlogPost[] = [
         subsections: [
           {
             heading: 'The Numbers Don\'t Lie',
+            content: 'TikTok has become a powerful platform for real estate marketing with impressive statistics.',
             list: [
               '72% of TikTok users are interested in real estate content',
               '45% of millennial and Gen Z homebuyers discover properties on TikTok',
@@ -533,6 +539,7 @@ export const blogPosts: BlogPost[] = [
         subsections: [
           {
             heading: 'Property Showcase Reels (1-15)',
+            content: 'These reels showcase properties in engaging, shareable formats.',
             list: [
               'Quick property tour hitting every room in 15 seconds',
               'Price reveal Reel - "Guess the price..." style',
@@ -553,6 +560,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             heading: 'Educational Content Reels (16-30)',
+            content: 'Educational content positions you as an expert and builds trust.',
             list: [
               'First-time homebuyer mistakes to avoid',
               'How to get approved for a mortgage',
@@ -573,6 +581,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             heading: 'Behind-the-Scenes Reels (31-40)',
+            content: 'Behind-the-scenes content humanizes your brand and builds connection.',
             list: [
               'Day in the life of a realtor',
               'Preparing for an open house',
@@ -588,6 +597,7 @@ export const blogPosts: BlogPost[] = [
           },
           {
             heading: 'Trending & Entertainment Reels (41-50)',
+            content: 'Entertainment content keeps your audience engaged and coming back.',
             list: [
               'Real estate agent stereotypes (humor)',
               'POV: Finding your dream home',
