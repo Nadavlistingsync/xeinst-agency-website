@@ -48,12 +48,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.8,
     },
-    {
-      url: 'https://xeinst.com/pricing',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.9,
-    },
           {
             url: 'https://xeinst.com/case-studies',
             lastModified: new Date(),
