@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Video, TrendingUp, Target, Film, BarChart, Megaphone } from 'lucide-react'
+import { Video, TrendingUp, Target, Film, BarChart, Megaphone, Users, Award } from 'lucide-react'
 import { Container } from './ui/Container'
 import { Heading } from './ui/Heading'
 import { Section } from './ui/Section'
@@ -14,6 +14,8 @@ const iconMap = {
   Film,
   BarChart,
   Megaphone,
+  Users,
+  Award,
 }
 
 export function Services() {

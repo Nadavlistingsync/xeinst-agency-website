@@ -8,9 +8,9 @@ import { Footer } from './components/Footer'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Real Estate Social Media Marketing & Video Editing Agency | Xeinst Media',
-  description: 'Professional video editing and social media management for real estate agents. We create viral TikTok, Instagram Reels & YouTube content that generates qualified buyer leads. 24-48hr turnaround.',
-  keywords: ['video editing for real estate agents', 'real estate social media management', 'tiktok marketing for realtors', 'instagram reels for real estate', 'real estate video editing service', 'property video clipping', 'realtor social media agency', 'real estate lead generation', 'property tour videos', 'realtor marketing'],
+  title: 'Real Estate Social Media Management Agency | Xeinst Media',
+  description: 'Strategic social media management and content creation for real estate agents. We handle TikTok, Instagram, YouTube & Facebook to generate qualified buyer leads and build your personal brand.',
+  keywords: ['real estate social media management', 'realtor social media agency', 'tiktok marketing for realtors', 'instagram management for real estate', 'social media agency for realtors', 'real estate content creation', 'realtor social media strategy', 'real estate lead generation', 'property social media marketing', 'realtor marketing'],
   authors: [{ name: 'Nadav Benedek' }],
   creator: 'Xeinst Media Agency',
   publisher: 'Xeinst Media Agency',
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Xeinst Media Agency | Real Estate Social Media Marketing & Video Clipping',
-    description: 'Transform your property listings into viral content. We help real estate agents dominate social media, generate quality leads, and close more deals through expert video clipping and SMMA services.',
+    title: 'Xeinst Media Agency | Real Estate Social Media Management',
+    description: 'Strategic social media management for real estate agents. We handle TikTok, Instagram, YouTube & Facebook to generate qualified buyer leads and build your personal brand.',
     url: 'https://xeinst.com',
     siteName: 'Xeinst Media Agency',
     images: [
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Xeinst Media Agency | Real Estate Social Media Marketing & Video Clipping',
-    description: 'Transform your property listings into viral content. We help real estate agents dominate social media, generate quality leads, and close more deals through expert video clipping and SMMA services.',
+    title: 'Xeinst Media Agency | Real Estate Social Media Management',
+    description: 'Strategic social media management for real estate agents. We handle TikTok, Instagram, YouTube & Facebook to generate qualified buyer leads and build your personal brand.',
     images: ['/og-image.jpg'],
     creator: '@xeinst',
   },
