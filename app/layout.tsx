@@ -8,9 +8,9 @@ import { Footer } from './components/Footer'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Xeinst Media Agency | Real Estate Social Media Marketing & Video Clipping',
-  description: 'Transform your property listings into viral content. We help real estate agents dominate social media, generate quality leads, and close more deals through expert video clipping and SMMA services.',
-  keywords: ['real estate social media marketing', 'real estate video editing', 'property video clipping', 'realtor TikTok', 'real estate Instagram Reels', 'real estate YouTube Shorts', 'real estate lead generation', 'property tour videos', 'realtor marketing'],
+  title: 'Real Estate Social Media Marketing & Video Editing Agency | Xeinst Media',
+  description: 'Professional video editing and social media management for real estate agents. We create viral TikTok, Instagram Reels & YouTube content that generates qualified buyer leads. 24-48hr turnaround.',
+  keywords: ['video editing for real estate agents', 'real estate social media management', 'tiktok marketing for realtors', 'instagram reels for real estate', 'real estate video editing service', 'property video clipping', 'realtor social media agency', 'real estate lead generation', 'property tour videos', 'realtor marketing'],
   authors: [{ name: 'Nadav Benedek' }],
   creator: 'Xeinst Media Agency',
   publisher: 'Xeinst Media Agency',

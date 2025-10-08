@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { useRouter } from 'next/navigation'
 import { Menu, X } from 'lucide-react'
 import { Container } from './ui/Container'
 import { Button } from './ui/Button'
@@ -10,6 +11,7 @@ import { siteConfig, navigation } from '@/content/site'
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,10 +22,16 @@ export function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+  const handleNavigation = (href: string) => {
+    if (href.startsWith('#')) {
+      // Handle anchor links
+      const element = document.querySelector(href)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    } else {
+      // Handle external links
+      router.push(href)
     }
     setIsMobileMenuOpen(false)
   }
@@ -45,7 +53,7 @@ export function Header() {
             className="flex-shrink-0"
           >
             <button
-              onClick={() => scrollToSection('#hero')}
+              onClick={() => router.push('/')}
               className="text-2xl font-bold text-black transition-colors duration-200 hover:opacity-80"
             >
               {siteConfig.name.split(' ')[0]}
@@ -62,7 +70,7 @@ export function Header() {
             {navigation.map((item, index) => (
               <button
                 key={item.name}
-                onClick={() => scrollToSection(item.href)}
+                onClick={() => handleNavigation(item.href)}
                 className="text-sm font-medium text-gray-700 hover:text-black transition-colors duration-200 hover:opacity-80"
               >
                 {item.name}
@@ -78,7 +86,7 @@ export function Header() {
             className="hidden md:block"
           >
             <Button
-              onClick={() => scrollToSection('#contact')}
+              onClick={() => handleNavigation('#contact')}
               className="bg-black text-white hover:bg-gray-800 shadow-lg"
             >
               Get Started
@@ -115,7 +123,7 @@ export function Header() {
             {navigation.map((item) => (
               <button
                 key={item.name}
-                onClick={() => scrollToSection(item.href)}
+                onClick={() => handleNavigation(item.href)}
                 className="block w-full text-left px-4 py-2 text-gray-700 hover:text-black hover:bg-gray-50 transition-colors duration-200"
               >
                 {item.name}
@@ -123,7 +131,7 @@ export function Header() {
             ))}
             <div className="px-4 pt-4">
               <Button
-                onClick={() => scrollToSection('#contact')}
+                onClick={() => handleNavigation('#contact')}
                 className="w-full bg-black text-white hover:bg-gray-800"
               >
                 Get Started

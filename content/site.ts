@@ -6,7 +6,7 @@ export const siteConfig = {
   links: {
     twitter: "https://twitter.com/xeinst",
     instagram: "https://instagram.com/xeinst",
-    linkedin: "https://linkedin.com/company/xeinst",
+    linkedin: "https://linkedin.com/company/xeinstmediaa",
     tiktok: "https://tiktok.com/@xeinst",
   },
   contact: {
@@ -18,7 +18,7 @@ export const siteConfig = {
 export const navigation = [
   { name: "About", href: "#about" },
   { name: "Services", href: "#services" },
-  { name: "Testimonials", href: "#testimonials" },
+  { name: "Blog", href: "/blog" },
   { name: "FAQ", href: "#faq" },
   { name: "Contact", href: "#contact" },
 ]
