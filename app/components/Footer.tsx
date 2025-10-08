@@ -2,14 +2,23 @@
 
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 import { Container } from './ui/Container'
 import { siteConfig, navigation } from '@/content/site'
 
 export function Footer() {
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+  const router = useRouter()
+  
+  const handleNavigation = (href: string) => {
+    if (href.startsWith('#')) {
+      // Handle anchor links
+      const element = document.querySelector(href)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    } else {
+      // Handle page links
+      router.push(href)
     }
   }
 
@@ -71,7 +80,7 @@ export function Footer() {
                 {navigation.map((item) => (
                   <li key={item.name}>
                     <button
-                      onClick={() => scrollToSection(item.href)}
+                      onClick={() => handleNavigation(item.href)}
                       className="text-gray-600 hover:text-black transition-colors duration-200 text-left"
                     >
                       {item.name}
@@ -89,13 +98,31 @@ export function Footer() {
               viewport={{ once: true }}
             >
               <h4 className="text-lg font-semibold mb-4">Services</h4>
-              <ul className="space-y-3 text-gray-600">
-                <li>Video Clipping</li>
-                <li>Social Media Management</li>
-                <li>Content Strategy</li>
-                <li>Video Production</li>
-                <li>Analytics & Growth</li>
-                <li>Paid Advertising</li>
+              <ul className="space-y-3">
+                <li>
+                  <button
+                    onClick={() => handleNavigation('#services')}
+                    className="text-gray-600 hover:text-black transition-colors duration-200 text-left"
+                  >
+                    Video Clipping
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => handleNavigation('#services')}
+                    className="text-gray-600 hover:text-black transition-colors duration-200 text-left"
+                  >
+                    Social Media Management
+                  </button>
+                </li>
+                <li>
+                  <button
+                    onClick={() => handleNavigation('#services')}
+                    className="text-gray-600 hover:text-black transition-colors duration-200 text-left"
+                  >
+                    Content Strategy
+                  </button>
+                </li>
               </ul>
             </motion.div>
           </div>
