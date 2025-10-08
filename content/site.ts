@@ -16,11 +16,8 @@ export const siteConfig = {
 }
 
 export const navigation = [
-  { name: "About", href: "#about" },
   { name: "Services", href: "#services" },
-  { name: "Blog", href: "/blog" },
-  { name: "Careers", href: "/careers" },
-  { name: "FAQ", href: "#faq" },
+  { name: "Pricing", href: "/pricing" },
   { name: "Contact", href: "#contact" },
 ]
 
