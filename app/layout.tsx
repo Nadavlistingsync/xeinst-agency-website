@@ -4,6 +4,7 @@ import './globals.css'
 import { cn } from '@/lib/utils'
 import { Header } from './components/Header'
 import { Footer } from './components/Footer'
+import { CTABar } from './components/CTABar'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
@@ -76,6 +77,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <CTABar />
       </body>
     </html>
   )

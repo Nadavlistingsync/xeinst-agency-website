@@ -73,10 +73,10 @@ export function Contact() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <Heading level={2} className="mb-6 text-black">
+          <Heading level={2} className="mb-6 text-white drop-shadow-lg">
             {contactContent.headline}
           </Heading>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto text-balance">
+          <p className="text-lg text-white/90 max-w-3xl mx-auto text-balance drop-shadow-md">
             {contactContent.description}
           </p>
         </motion.div>
@@ -91,9 +91,9 @@ export function Contact() {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
-              <p className="text-gray-600 mb-8 leading-relaxed">
-                Ready to solve your biggest problem? We'd love to hear from you. 
+              <h3 className="text-2xl font-semibold mb-6 text-white">Get in Touch</h3>
+              <p className="text-white/80 mb-8 leading-relaxed">
+                Ready to dominate your real estate market? We'd love to hear from you. 
                 Send us a message and we'll respond within 24 hours.
               </p>
             </div>
@@ -110,14 +110,14 @@ export function Contact() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: index * 0.1 }}
                     viewport={{ once: true }}
-                    className="flex items-center group hover:text-primary transition-colors duration-200"
+                    className="flex items-center group transition-colors duration-200"
                   >
-                    <div className="flex-shrink-0 w-12 h-12 bg-black text-white rounded-lg flex items-center justify-center mr-4 group-hover:bg-gray-800 transition-all duration-200 shadow-lg">
+                    <div className="flex-shrink-0 w-12 h-12 bg-white/10 backdrop-blur-sm text-white rounded-xl flex items-center justify-center mr-4 group-hover:bg-white/20 transition-all duration-200 shadow-lg border border-white/20">
                       <IconComponent className="h-5 w-5" />
                     </div>
                     <div>
-                      <div className="font-semibold text-black">{info.label}</div>
-                      <div className="text-gray-600">{info.value}</div>
+                      <div className="font-semibold text-white">{info.label}</div>
+                      <div className="text-white/70">{info.value}</div>
                     </div>
                   </motion.a>
                 )
@@ -131,7 +131,7 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="bg-gray-50 p-8 rounded-lg border border-gray-200 shadow-xl"
+            className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 shadow-2xl"
           >
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               {/* Honeypot field */}
@@ -145,7 +145,7 @@ export function Contact() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium mb-2 text-white">
                     Full Name *
                   </label>
                   <Input
@@ -160,7 +160,7 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium mb-2 text-white">
                     Email Address *
                   </label>
                   <Input
@@ -178,7 +178,7 @@ export function Contact() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="company" className="block text-sm font-medium mb-2">
+                  <label htmlFor="company" className="block text-sm font-medium mb-2 text-white">
                     Company
                   </label>
                   <Input
@@ -189,7 +189,7 @@ export function Contact() {
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium mb-2">
+                  <label htmlFor="phone" className="block text-sm font-medium mb-2 text-white">
                     Phone Number
                   </label>
                   <Input
@@ -202,7 +202,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label htmlFor="problem" className="block text-sm font-medium mb-2">
+                <label htmlFor="problem" className="block text-sm font-medium mb-2 text-white">
                   Describe Your Problem *
                 </label>
                 <Textarea
@@ -218,7 +218,7 @@ export function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
+                <label htmlFor="message" className="block text-sm font-medium mb-2 text-white">
                   Additional Message
                 </label>
                 <Textarea

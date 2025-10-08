@@ -9,7 +9,14 @@ import { heroContent } from '@/content/site'
 
 export function Hero() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center hero-section pt-20">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center hero-section pt-20 overflow-hidden">
+      {/* Animated gradient blobs */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-20 -left-10 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div className="absolute top-40 -right-10 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute -bottom-20 left-1/2 w-72 h-72 bg-indigo-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000" style={{ animationDelay: '4s' }}></div>
+      </div>
+
       <Container className="relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,13 +30,13 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mb-8"
           >
-            <Heading level={1} className="mb-6 text-balance text-black">
+            <Heading level={1} className="mb-6 text-balance text-white drop-shadow-lg">
               {heroContent.headline}
             </Heading>
-            <p className="text-xl sm:text-2xl text-gray-700 mb-8 text-balance">
+            <p className="text-xl sm:text-2xl text-white/90 mb-8 text-balance drop-shadow-md">
               {heroContent.subheading}
             </p>
-            <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto text-balance">
+            <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto text-balance drop-shadow-md">
               {heroContent.description}
             </p>
           </motion.div>
@@ -42,7 +49,7 @@ export function Hero() {
           >
             <Button
               size="xl"
-              className="group bg-black text-white hover:bg-gray-800 border-2 border-black shadow-xl"
+              className="group bg-white text-purple-600 hover:bg-gray-50 border-2 border-white shadow-2xl font-semibold"
               onClick={() => {
                 document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
               }}
@@ -54,7 +61,7 @@ export function Hero() {
             <Button
               variant="outline"
               size="xl"
-              className="group bg-transparent text-black border-2 border-black hover:bg-black hover:text-white shadow-xl"
+              className="group bg-transparent text-white border-2 border-white hover:bg-white hover:text-purple-600 shadow-2xl font-semibold"
               onClick={() => {
                 document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })
               }}
@@ -65,27 +72,18 @@ export function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Background Elements */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.6 }}
-          className="absolute inset-0 -z-10 flex items-center justify-center"
-        >
-          <div className="w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-        </motion.div>
-
+        {/* Scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5, delay: 1 }}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         >
-          <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
+          <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
             <motion.div
               animate={{ y: [0, 12, 0] }}
               transition={{ duration: 1.5, repeat: Infinity }}
-              className="w-1 h-3 bg-gray-400 rounded-full mt-2"
+              className="w-1 h-3 bg-white/70 rounded-full mt-2"
             />
           </div>
         </motion.div>

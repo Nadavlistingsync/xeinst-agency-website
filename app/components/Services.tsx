@@ -48,19 +48,30 @@ export function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="group p-8 rounded-lg border border-gray-200 hover:border-black transition-all duration-300 hover:shadow-2xl bg-white"
+                className="group relative p-8 rounded-2xl bg-white border border-gray-200 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
               >
-                <div className="mb-6">
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-black text-white rounded-lg mb-4 group-hover:bg-gray-800 transition-all duration-300 shadow-lg">
-                    <IconComponent className="h-6 w-6" />
-                  </div>
+                {/* Gradient border glow on hover */}
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-600 via-pink-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-xl"></div>
+                
+                {/* Icon with gradient background */}
+                <div className="relative inline-flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-500 via-purple-600 to-pink-500 shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <IconComponent className="h-7 w-7 text-white" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-black group-hover:text-gray-600 transition-colors duration-300">
+                
+                <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed mb-4">
                   {service.description}
                 </p>
+                
+                {/* Hover arrow indicator */}
+                <div className="flex items-center text-purple-600 font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  Learn more 
+                  <svg className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               </motion.div>
             )
           })}
