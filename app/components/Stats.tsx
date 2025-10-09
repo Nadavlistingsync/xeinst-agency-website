@@ -27,13 +27,7 @@ const stats = [
 
 export function Stats() {
   return (
-    <section className="py-20 bg-black relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full filter blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full filter blur-3xl"></div>
-      </div>
-
+    <section className="py-20 bg-white relative overflow-hidden">
       <Container className="relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -42,10 +36,10 @@ export function Stats() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
             Real Results for Real Estate Agents
           </h2>
-          <p className="text-white/80 text-lg max-w-2xl mx-auto">
+          <p className="text-gray-700 text-lg max-w-2xl mx-auto">
             We don't just create content—we deliver measurable results that grow your business
           </p>
         </motion.div>
@@ -58,18 +52,18 @@ export function Stats() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
               viewport={{ once: true }}
-              className="text-center group"
+              className="text-center group p-8 bg-white rounded-2xl border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 mb-4 rounded-2xl bg-white/10 backdrop-blur-sm border border-white/20 group-hover:bg-white/20 transition-all duration-300 group-hover:scale-110">
+              <div className="inline-flex items-center justify-center w-16 h-16 mb-4 rounded-2xl bg-black group-hover:scale-110 transition-all duration-300 shadow-lg">
                 <stat.icon className="h-8 w-8 text-white" />
               </div>
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2 group-hover:scale-110 transition-transform duration-300">
+              <div className="text-4xl md:text-5xl font-bold text-black mb-2 group-hover:scale-110 transition-transform duration-300">
                 {stat.value}
               </div>
-              <div className="text-white/90 font-semibold text-sm md:text-base mb-1">
+              <div className="text-black font-semibold text-sm md:text-base mb-1">
                 {stat.label}
               </div>
-              <div className="text-white/60 text-xs md:text-sm px-2">
+              <div className="text-gray-600 text-xs md:text-sm px-2">
                 {stat.description}
               </div>
             </motion.div>

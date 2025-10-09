@@ -18,10 +18,10 @@ export function Testimonials() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <Heading level={2} className="mb-6 text-white">
+          <Heading level={2} className="mb-6 text-black">
             Client Success Stories
           </Heading>
-          <p className="text-lg text-white/80 max-w-3xl mx-auto text-balance">
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto text-balance">
             We're currently gathering testimonials from our amazing clients. Check back soon!
           </p>
         </motion.div>
@@ -33,26 +33,21 @@ export function Testimonials() {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto"
         >
-          <div className="relative p-12 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 text-center">
-            {/* Gradient glow effect */}
-            <div className="absolute inset-0 rounded-2xl bg-white/10 opacity-50 blur-xl"></div>
+          <div className="relative p-12 bg-white rounded-2xl border border-gray-200 text-center shadow-lg">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-black rounded-2xl mb-6 shadow-lg">
+              <CheckCircle className="h-10 w-10 text-white" />
+            </div>
             
-            <div className="relative z-10">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-white rounded-2xl mb-6 shadow-lg">
-                <CheckCircle className="h-10 w-10 text-black" />
-              </div>
-              
-              <h3 className="text-3xl font-bold mb-4 text-white">
-                Coming Soon
-              </h3>
-              <p className="text-white/70 text-lg leading-relaxed mb-6">
-                We're working with incredible real estate agents who are seeing amazing results. Their testimonials will be featured here soon!
-              </p>
-              
-              <div className="inline-flex items-center text-white/80 font-semibold">
-                <span className="animate-pulse mr-2">●</span>
-                Collecting success stories now
-              </div>
+            <h3 className="text-3xl font-bold mb-4 text-black">
+              Coming Soon
+            </h3>
+            <p className="text-gray-600 text-lg leading-relaxed mb-6">
+              We're working with incredible real estate agents who are seeing amazing results. Their testimonials will be featured here soon!
+            </p>
+            
+            <div className="inline-flex items-center text-gray-600 font-semibold">
+              <span className="animate-pulse mr-2">●</span>
+              Collecting success stories now
             </div>
           </div>
         </motion.div>
@@ -65,7 +60,7 @@ export function Testimonials() {
           viewport={{ once: true }}
           className="mt-16"
         >
-          <h3 className="text-2xl font-bold text-white text-center mb-12">
+          <h3 className="text-2xl font-bold text-black text-center mb-12">
             Why Real Estate Agents Choose Xeinst Media
           </h3>
           
@@ -77,20 +72,17 @@ export function Testimonials() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 viewport={{ once: true }}
-                className="group relative p-8 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-500 hover:-translate-y-1"
+                className="group relative p-8 bg-white rounded-2xl border border-gray-200 shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-1"
               >
-                {/* Gradient glow effect */}
-                <div className="absolute inset-0 rounded-2xl bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10 blur-xl"></div>
-                
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center mr-4 mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                    <CheckCircle className="h-6 w-6 text-black" />
+                  <div className="flex-shrink-0 w-12 h-12 bg-black rounded-xl flex items-center justify-center mr-4 mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                    <CheckCircle className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-3 text-white group-hover:text-white transition-colors duration-300">
+                    <h3 className="text-xl font-semibold mb-3 text-black transition-colors duration-300">
                       {feature.title}
                     </h3>
-                    <p className="text-white/70 leading-relaxed group-hover:text-white/90 transition-colors duration-300">
+                    <p className="text-gray-600 leading-relaxed transition-colors duration-300">
                       {feature.description}
                     </p>
                   </div>
