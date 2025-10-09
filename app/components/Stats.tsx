@@ -1,12 +1,12 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Eye, Users, Clock, TrendingUp } from 'lucide-react'
+import { Eye, Users, Clock } from 'lucide-react'
 import { Container } from './ui/Container'
 
 const stats = [
   { 
-    value: '500K+', 
+    value: '6M+', 
     label: 'Views Generated', 
     icon: Eye,
     description: 'Total social media views for our clients'
@@ -23,21 +23,15 @@ const stats = [
     icon: Clock,
     description: 'Average delivery time for content'
   },
-  { 
-    value: '300%', 
-    label: 'Avg Growth', 
-    icon: TrendingUp,
-    description: 'Average follower growth in 90 days'
-  },
 ]
 
 export function Stats() {
   return (
-    <section className="py-20 bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-700 relative overflow-hidden">
+    <section className="py-20 bg-black relative overflow-hidden">
       {/* Decorative elements */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-96 h-96 bg-white rounded-full filter blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-pink-300 rounded-full filter blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-white rounded-full filter blur-3xl"></div>
       </div>
 
       <Container className="relative z-10">
@@ -56,7 +50,7 @@ export function Stats() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}

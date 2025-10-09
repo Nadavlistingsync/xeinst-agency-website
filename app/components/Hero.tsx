@@ -12,9 +12,9 @@ export function Hero() {
     <section id="hero" className="relative min-h-screen flex items-center justify-center hero-section pt-20 overflow-hidden">
       {/* Animated gradient blobs */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 -left-10 w-72 h-72 bg-purple-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-        <div className="absolute top-40 -right-10 w-72 h-72 bg-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute -bottom-20 left-1/2 w-72 h-72 bg-indigo-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-20 -left-10 w-72 h-72 bg-white/10 rounded-full filter blur-xl opacity-50 animate-blob"></div>
+        <div className="absolute top-40 -right-10 w-72 h-72 bg-white/10 rounded-full filter blur-xl opacity-50 animate-blob animation-delay-2000" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute -bottom-20 left-1/2 w-72 h-72 bg-white/10 rounded-full filter blur-xl opacity-50 animate-blob animation-delay-4000" style={{ animationDelay: '4s' }}></div>
       </div>
 
       <Container className="relative z-10 text-center">
@@ -49,7 +49,7 @@ export function Hero() {
           >
             <Button
               size="xl"
-              className="group bg-white text-purple-600 hover:bg-gray-50 border-2 border-white shadow-2xl font-semibold"
+              className="group bg-white text-black hover:bg-gray-100 border-2 border-white shadow-2xl font-semibold"
               onClick={() => {
                 document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
               }}
@@ -61,7 +61,7 @@ export function Hero() {
             <Button
               variant="outline"
               size="xl"
-              className="group bg-transparent text-white border-2 border-white hover:bg-white hover:text-purple-600 shadow-2xl font-semibold"
+              className="group bg-transparent text-white border-2 border-white hover:bg-white hover:text-black shadow-2xl font-semibold"
               onClick={() => {
                 document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })
               }}

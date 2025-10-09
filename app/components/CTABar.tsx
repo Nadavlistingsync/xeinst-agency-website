@@ -41,7 +41,7 @@ export function CTABar() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
           transition={{ duration: 0.3 }}
-          className="fixed bottom-0 left-0 right-0 z-50 bg-gradient-to-r from-purple-600 via-indigo-600 to-purple-600 shadow-2xl border-t border-white/10"
+          className="fixed bottom-0 left-0 right-0 z-50 bg-black shadow-2xl border-t border-white/10"
         >
           <Container>
             <div className="flex items-center justify-between py-4 gap-4">
@@ -57,7 +57,7 @@ export function CTABar() {
               <div className="flex items-center gap-3">
                 <Button
                   onClick={handleCTA}
-                  className="bg-white text-purple-600 hover:bg-gray-50 shadow-lg font-semibold group"
+                  className="bg-white text-black hover:bg-gray-100 shadow-lg font-semibold group"
                   size="sm"
                 >
                   Get Started Free
