@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useEffect } from 'react'
 import { Phone, Mail, MapPin } from 'lucide-react'
 import { Container } from './ui/Container'
 import { Heading } from './ui/Heading'
@@ -15,17 +14,6 @@ const iconMap = {
 }
 
 export function Contact() {
-  useEffect(() => {
-    // Load Cal.com embed script
-    const script = document.createElement('script')
-    script.src = 'https://app.cal.com/embed/embed.js'
-    script.async = true
-    document.body.appendChild(script)
-
-    return () => {
-      document.body.removeChild(script)
-    }
-  }, [])
 
   return (
     <Section id="contact" className="contact-section">
@@ -98,11 +86,16 @@ export function Contact() {
             className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/20 shadow-2xl"
           >
             <h3 className="text-2xl font-semibold mb-6 text-white">Schedule a Consultation</h3>
-            <div 
-              data-cal-link="nadavbenedekxeinst/social-media-stratagey-and-plan"
-              data-cal-config='{"layout":"month_view"}'
-              className="min-h-[600px]"
-            />
+            <div className="min-h-[600px] bg-white/5 rounded-xl border border-white/10 p-4">
+              <iframe
+                src="https://cal.com/nadavbenedekxeinst/social-media-stratagey-and-plan?embed=true"
+                width="100%"
+                height="600"
+                frameBorder="0"
+                className="rounded-lg"
+                title="Schedule a consultation"
+              />
+            </div>
           </motion.div>
         </div>
       </Container>
